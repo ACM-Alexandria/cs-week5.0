@@ -1,0 +1,50 @@
+/* Global background settings */
+/* body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #6a4cf7, #1e40af); 
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; 
+} */  
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+  url('/public/assets/bg3.jpg') no-repeat center center fixed;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background-size: cover; /* Ensures the image covers the entire viewport */
+  min-height: 100vh; /* Ensures the background covers the entire viewport */
+  
+}
+
+.wrapper {
+  width: 80%; /* Adjusts the width of the content */
+  max-width: 1200px; /* Optional: Limits the maximum width */
+  /* background: rgba(255, 255, 255, 0.1); Semi-transparent background */
+  /* backdrop-filter: blur(5px); Adds blur effect */
+  padding: 20px; /* Adds spacing inside the wrapper */
+  border-radius: 10px; /* Optional: Rounded corners */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); Optional: Adds a shadow */
+  margin: 0px auto; /* Centers the wrapper */
+}
+
+/* For any section with solid background */
+.section {
+  background: rgba(0, 0, 0, 0.6); /* Slightly transparent black overlay for text readability */
+  padding: 50px 20px;
+}
+
+/* Adjusting text colors to ensure visibility */
+h1, h2, h3, p {
+  color: white;
+}
+
+/* Target specific components like .main-content, .about-section */
+.hackathon-event, .about-section {
+  margin-top: 80px; /* Same value as the header height */
+}

@@ -1,0 +1,41 @@
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  margin: 20px auto;
+  background: url('/public/assets/aboutImg4.png') center/cover no-repeat; /* Use a vintage-style texture */
+  /* border-radius: 15px; */
+  /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4), inset 0 0 30px rgba(255, 255, 255, 0.2); */
+  width: 90%;
+  max-width: 800px;
+  height: 500px;
+  position: relative;
+  font-family: 'Georgia', serif; /* Serif font for a classic look */
+}
+
+.about-content {
+  padding: 70px;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #4b392a;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.about-content p {
+  font-size: 18px;
+  color: #4b392a;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.about-content span {
+  display: inline-block;
+  opacity: 0; /* Start invisible for animation */
+  white-space: pre; /* Ensures spaces are preserved */
+}

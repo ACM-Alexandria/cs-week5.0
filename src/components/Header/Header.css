@@ -1,0 +1,71 @@
+/* Header.css */
+
+/* General styles for header */
+.header {
+  position: fixed; /* Fixes the header at the top */
+  top: 10px;
+  left: 0;
+  width: 100%;
+   /* Blue background color */
+  color: white;
+  z-index: 1000; /* Ensures the header stays on top of other content */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.23); Subtle shadow */
+}
+
+/* Navigation bar layout */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Limits max width of nav */
+  margin: 0 auto;
+}
+
+/* Logo styles */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  /* letter-spacing: 2px; */
+  font-family: IntegralCF-Heavy, sans-serif;
+}
+
+.logo-image {
+  width: 200px; /* Adjust size of the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Styles for the navigation links */
+.nav-links {
+  display: flex;
+  gap: 30px; /* Space between each link */
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer; /* Add pointer cursor for links */
+}
+
+.nav-link:hover {
+  color: #F59E0B; /* Yellow color on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px; /* Adjust space for mobile */
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+}

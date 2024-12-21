@@ -1,0 +1,82 @@
+/* Sponsers.css */
+
+.sponsers-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    gap: 30px;
+  }
+  
+  .sponsers-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    max-width: 1200px; /* Limit max width */
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between sponsor cards */
+  }
+  
+  .sponsor-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px; /* Adjust width of each card */
+  }
+  
+  .sponsor-card:hover {
+    transform: translateY(-10px); /* Hover effect to lift the card */
+  }
+  
+  .sponsor-logo {
+    max-width: 100%;
+    height: 120px;
+    object-fit: contain;
+  }
+  
+  .sponsor-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1E40AF; /* Blue color */
+    margin-top: 10px;
+  }
+  
+  /* Arrows for navigation */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #1E40AF;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .left-arrow {
+    left: -40px;
+  }
+  
+  .right-arrow {
+    right: -40px;
+  }
+  
+  .arrow:hover {
+    color: #F59E0B; /* Hover effect for the arrows */
+  }
+  

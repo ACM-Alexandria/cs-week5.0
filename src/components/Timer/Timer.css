@@ -1,0 +1,133 @@
+.hackathon-event {
+  color: #fff;
+  padding: 50px 20px;
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: calc(100vh - 120px); /* Full viewport height minus the navbar height */
+  box-sizing: border-box; /* Include padding in height calculation */
+  border-radius: 15px;
+  background: rgba(34, 32, 32, 0.3);
+  /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4), inset 0 0 30px rgba(255, 255, 255, 0.2); */
+}
+
+.hackathon-event .container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: flex-start; /* Align info and timer at the start */
+  align-items: center; /* Vertically center info and timer */
+  gap: 220px; /* Adjust spacing between info and timer */
+}
+
+.hackathon-event h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #4b392a; /* Vintage dark color */
+  font-family: 'Georgia', serif; /* Serif font for a classic look */
+  -webkit-text-stroke: .5px #d4a373; /* Black stroke for better readability */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4); /* Glow effect */
+}
+.hackathon-event img {
+  width: 400px;
+  height: 339px;
+  /* border-radius: 50%; */  
+}
+
+.hackathon-event h2 {
+  font-size: 24px;
+  margin: 10px 0;
+  font-family: 'Georgia', serif;
+  color: #d4a373; /* Vintage gold color */
+}
+
+.hackathon-event p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 0;
+  font-family: 'Georgia', serif;
+}
+
+.hackathon-event .right-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  animation: container 0.5s ease-in;
+}
+
+.hackathon-event .countdown {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hackathon-event .countdown div {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 10px 20px;
+  border-radius: 8px;
+  animation: fadeIn 1s ease-in;
+}
+
+.hackathon-event .countdown span {
+  font-size: 32px;
+  font-weight: bold;
+  display: block;
+}
+
+.hackathon-event .countdown p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.hackathon-event .info {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Georgia', serif;
+  color: #4b392a;
+}
+
+.hackathon-event .button {
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 2px solid white;
+  border-radius: 50px;
+  color: black;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.hackathon-event .button:hover {
+  background-color: transparent;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hackathon-event .container {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      text-align: center;
+  }
+
+  .hackathon-event .countdown {
+      margin-top: 20px; /* Adjust spacing on mobile */
+  }
+}

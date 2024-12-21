@@ -1,0 +1,94 @@
+/* TimeLine.css */
+#schedule {
+    background-color: #f7fafc;
+    padding: 40px 20px;
+  }
+  
+  h2 {
+    color: #1E40AF; /* Blue color for the heading */
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .timeline-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 20px 0;
+    padding-left: 40px;
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  .timeline-card:nth-child(even) {
+    flex-direction: row-reverse;
+    padding-right: 40px;
+  }
+  
+  .timeline-card:nth-child(odd) {
+    padding-left: 40px;
+  }
+  
+  .timeline-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #1E40AF;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+  .timeline-content {
+    max-width: 600px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-day {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1E40AF;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-description {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* Animation for cards */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .timeline-container {
+      padding: 0 20px;
+    }
+  
+    .timeline-card {
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .timeline-circle {
+      margin: 0 0 10px 0;
+    }
+  }
+  
