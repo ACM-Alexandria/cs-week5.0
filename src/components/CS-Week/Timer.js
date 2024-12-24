@@ -38,7 +38,7 @@ const Timer = () => {
         {/* Countdown Timer */}
         <div className="right-part">
         {/* <img src="https://res.cloudinary.com/dcevjlqv4/image/upload/v1706690072/hackathon/o1vyqhxcv6yawv10gapw.png" alt="CS-Week v5.0 Hackathon '24" /> */}
-          <img src="/assets/logo.png" alt="CS-Week v5.0 Hackathon '24" />
+          <img src="assets/logo.png" alt="CS-Week v5.0 Hackathon '24" />
           <div className="countdown">
             <div>
               <span>{days}</span> <p>DAYS</p>

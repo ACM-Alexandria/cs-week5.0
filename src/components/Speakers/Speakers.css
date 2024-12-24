@@ -1,4 +1,88 @@
 /* Speakers.css */
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+.image-container {
+  position: relative; /* Create a positioning context for the text */
+  display: inline-block; /* Ensure the image and text are wrapped together */
+  width: 100%; /* Make the container responsive */
+  max-width: 600px; /* Optional: Limit the maximum width */
+}
+
+.responsive-image {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.overlay-image {
+  width: 40%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Position the text relative to the container */
+  top: 45.4%; /* Adjust the top position (e.g., center vertically) */
+  left: 50%; /* Adjust the left position (e.g., center horizontally) */
+  transform: translate(-50%, -50%); /* Center the text exactly */
+}
+
+
+.overlay-text-title {
+  top: 20%; /* Adjust the top position (e.g., center vertically) */
+  left: 50%; /* Adjust the left position (e.g., center horizontally) */
+  font-family: "IM Fell English SC", serif;
+  position: absolute; /* Position the text relative to the container */
+  transform: translate(-50%, -50%); /* Center the text exactly */
+  font-size: 23px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  text-align: center; /* Center align the text if it spans multiple lines */
+  color: #FFA500; /* Base orange color */
+  text-shadow: 
+    1px 1px 2px #474747, /* Darker shadow for depth */
+    -1px -1px 2px #000000, /* Lighter shadow for highlight */
+    0 0 5px rgba(0, 0, 0, 0.8); /* Glow effect */
+  background: linear-gradient(90deg, #ff7a00, #ffc800); /* Orange gradient */
+  -webkit-background-clip: text; /* Clip background to text */
+  /* -webkit-text-fill-color: transparent; Make text transparent to show gradient */
+  text-align: center;
+}
+
+.overlay-text-name {
+  top: 79%; /* Adjust the top position (e.g., center vertically) */
+  left: 50%; /* Adjust the left position (e.g., center horizontally) */
+  font-family: "IM Fell English SC", serif;
+  position: absolute; /* Position the text relative to the container */
+  transform: translate(-50%, -50%); /* Center the text exactly */
+  font-size: 23px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  text-align: center; /* Center align the text if it spans multiple lines */
+  color: #FFA500; /* Base orange color */
+  text-shadow: 
+    1px 1px 2px #474747, /* Darker shadow for depth */
+    -1px -1px 2px #000000, /* Lighter shadow for highlight */
+    0 0 5px rgba(0, 0, 0, 0.8); /* Glow effect */
+  background: linear-gradient(90deg, #ff7a00, #ffc800); /* Orange gradient */
+  -webkit-background-clip: text; /* Clip background to text */
+  /* -webkit-text-fill-color: transparent; Make text transparent to show gradient */
+  text-align: center;
+}
+
+.overlay-text-job {
+  top: 87%; /* Adjust the top position (e.g., center vertically) */
+  left: 50%; /* Adjust the left position (e.g., center horizontally) */
+  font-family: "IM Fell English SC", serif;
+  position: absolute; /* Position the text relative to the container */
+  transform: translate(-50%, -50%); /* Center the text exactly */
+  font-size: 23px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  text-align: center; /* Center align the text if it spans multiple lines */
+  color: #7cb4c7; /* Base orange color */
+  text-shadow: 
+    1px 1px 2px #474747, /* Darker shadow for depth */
+    -1px -1px 2px #000000, /* Lighter shadow for highlight */
+    0 0 5px rgba(0, 0, 0, 0.8); /* Glow effect */
+  background: linear-gradient(90deg, #ff7a00, #ffc800); /* Orange gradient */
+  -webkit-background-clip: text; /* Clip background to text */
+  /* -webkit-text-fill-color: transparent; Make text transparent to show gradient */
+  text-align: center;
+}
+
 
 .speakers-section {
     display: flex;
@@ -15,82 +99,20 @@
     width: 90%; /* You can adjust this value based on your desired width */
     max-width: 1200px; /* Limit the max width */
   }
-  
-  .cards-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Space between cards */
-  }
-  
-  .speaker-card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 280px; /* Adjust width of each card */
-    text-align: center;
-    /* padding: 20px; */
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .speaker-card:hover {
-    transform: translateY(-10px); /* Hover effect to lift the card */
-  }
-  
-  .speaker-image {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    /* border-radius: 50%; */
-    border-radius: 12px;
-    margin-bottom: 15px;
-  }
-  
-  .speaker-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .speaker-info {
-    padding: 10px;
-  }
-  
-  .speaker-name {
-    font-size: 18px;
-    font-weight: bold;
-    color: #1E40AF; /* Blue color */
-  }
-  
-  .graduation-year, .company, .summary {
-    font-size: 14px;
-    color: #333;
-    margin-top: 5px;
-  }
-  
-  /* Arrows for navigation */
-  .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 30px;
-    color: #1E40AF;
-    cursor: pointer;
-    z-index: 10;
-  }
-  
+
   .left-arrow {
-    left: -40px; /* Position the left arrow on the left */
+    position: absolute;
+    color: #7cb4c7;
+    left: 15%;
+    transform: translateY(-50%);
+    cursor: pointer;
   }
-  
+
   .right-arrow {
-    right: -40px; /* Position the right arrow on the right */
+    position: absolute;
+    right: 15%;
+    color: #7cb4c7;
+    transform: translateY(-50%);
+    cursor: pointer;
   }
-  
-  .arrow:hover {
-    color: #F59E0B; /* Hover effect for the arrows */
-  }
-  
+ 

@@ -16,7 +16,7 @@ const Speakers = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + speakersData.length) % speakersData.length); // Loop back to the last speaker
   };
 
-  const numCardsToDisplay = 3; // Number of cards to display at a time, can adjust based on screen size
+  const numCardsToDisplay = 1; // Number of cards to display at a time, can adjust based on screen size
 
   // Calculate which speakers to display based on the current index and how many cards to show
   const visibleSpeakers = [
@@ -27,33 +27,28 @@ const Speakers = () => {
 
   return (
     <section className="speakers-section">
-      <div className="speakers-container">
-        {/* Left Arrow */}
+    
+      <div class="image-container">
         <div className="arrow left-arrow" onClick={handlePrevSpeaker}>
           <FaArrowLeft />
         </div>
 
-        <div className="cards-container">
-          {visibleSpeakers.map(({ id, name, graduationYear, company, summary, image }) => (
-            <div className="speaker-card" key={id}>
-              <div className="speaker-image">
-                <img src={image} alt={name} className="speaker-img" />
-              </div>
-              <div className="speaker-info">
-                <h3 className="speaker-name">{name}</h3>
-                <p className="graduation-year">{graduationYear}</p>
-                <p className="company">SWE at {company}</p>
-                <p className="summary">{summary}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <img src="assets/speakers.png" alt="Background" class="responsive-image" />
+        <div class="overlay-text-title">MEET OUR SPEAKERS</div>
+        {visibleSpeakers.map(({ id, name, graduationYear, company, summary, image }) => (
+          <>
+            <img src={image} alt="speaker Img" class="overlay-image" />
+            <div class="overlay-text-name">{name}</div>
+            <div class="overlay-text-job">{company}</div>
+          </>
+        ))}
 
-        {/* Right Arrow */}
         <div className="arrow right-arrow" onClick={handleNextSpeaker}>
           <FaArrowRight />
         </div>
+
       </div>
+
     </section>
   );
 };

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=IM+Fell+English+SC&family=Just+Another+Hand&family=Merienda:wght@300..900&display=swap');
+
 .about-section {
   display: flex;
   align-items: center;
@@ -28,10 +30,13 @@
 }
 
 .about-content p {
-  font-size: 18px;
+  font-size: 21px;
   color: #4b392a;
-  line-height: 1.8;
-  margin-bottom: 16px;
+  line-height: 1.6;
+  /* margin-bottom: 16px; */
+  font-family: "IM Fell English SC", serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .about-content span {

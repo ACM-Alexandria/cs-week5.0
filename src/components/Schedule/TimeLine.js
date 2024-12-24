@@ -11,7 +11,7 @@ const TimeLine = () => {
   ];
 
   return (
-    <section id="schedule" className="p-8 bg-gray-100">
+    <section id="schedule-section" className="p-8 bg-gray-100">
       <h2 className="text-2xl font-bold mb-8 text-center">Event Schedule</h2>
       <div className="timeline-container">
         {events.map((event, index) => (
