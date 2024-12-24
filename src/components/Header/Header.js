@@ -14,7 +14,7 @@ const Header = () => {
           <Link to="schedule-section" smooth duration={500} className="nav-link">Schedule</Link>
           <Link to="sponsers-section" smooth duration={500} className="nav-link">Sponsers</Link>
           <Link to="prizes-section" smooth duration={500} className="nav-link">Prizes</Link>
-          <Link to="registration-section" smooth duration={500} className="nav-link">Register</Link>
+          <Link to="about-us-section" smooth duration={500} className="nav-link">About us</Link>
         </div>
       </nav>
     </header>
