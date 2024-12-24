@@ -1,0 +1,11 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Just+Another+Hand&family=Merienda:wght@300..900&display=swap');
+</style>
+
+.just-another-hand-regular {
+  font-family: "Just Another Hand", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+------------------------------------------
